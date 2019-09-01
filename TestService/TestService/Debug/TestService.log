@@ -1,0 +1,8 @@
+﻿  stdafx.cpp
+  TestService.cpp
+f:\studyc++\testservice\testservice\testservice.cpp(14): warning C4101: “dwWaitTime”: 未引用的局部变量
+f:\studyc++\testservice\testservice\testservice.cpp(13): warning C4101: “DwStartTickCount”: 未引用的局部变量
+f:\studyc++\testservice\testservice\testservice.cpp(12): warning C4101: “dwOldCheckPoint”: 未引用的局部变量
+f:\studyc++\testservice\testservice\testservice.cpp(48): warning C4715: “getServiceState”: 不是所有的控件路径都返回值
+  TestService.vcxproj -> F:\studyC++\TestService\Debug\TestService.exe
+  TestService.vcxproj -> F:\studyC++\TestService\Debug\TestService.pdb (Full PDB)

@@ -1,0 +1,11 @@
+﻿  stdafx.cpp
+  TestService.cpp
+TestService.cpp(14): warning C4101: “dwWaitTime”: 未引用的局部变量
+TestService.cpp(13): warning C4101: “DwStartTickCount”: 未引用的局部变量
+TestService.cpp(12): warning C4101: “dwOldCheckPoint”: 未引用的局部变量
+  正在生成代码
+f:\studyc++\testservice\testservice\testservice.cpp(48): warning C4715: “getServiceState”: 不是所有的控件路径都返回值
+  All 2 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  已完成代码的生成
+  TestService.vcxproj -> F:\studyC++\TestService\x64\Release\TestService.exe
+  TestService.vcxproj -> F:\studyC++\TestService\x64\Release\TestService.pdb (Full PDB)
