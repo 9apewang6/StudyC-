@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FindOrgImage</class>
+ <widget class="QWidget" name="FindOrgImage">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1052</width>
+    <height>665</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>FindOrgImage</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/*tabWidget样式设计*/
+QTabWidget::pane{
+	border:1px; 
+	background:rgb(226, 226, 226);
+} 
+QTabWidget::tab-bar{ 
+	background:qlineargradient(x1 : 0, y1 : 0, x2 : 0, y2 : 1, stop : 0 rgb(107, 107, 107), stop: 1.0 rgb(61, 61, 61));
+} 
+QTabBar::tab{
+	background:qlineargradient(x1 : 0, y1 : 0, x2 : 0, y2 : 1, stop : 0 rgb(107, 107, 107), stop: 1.0 rgb(61, 61, 61));
+	border-right:1px solid white;
+	min-width:80px;
+	min-height:23px;
+	color:white;
+}
+QTabBar::tab:hover{
+	background:qlineargradient(x1 : 0, y1 : 0, x2 : 0, y2 : 1, stop : 0 rgb(248, 186, 0), stop : 1.0 rgb(250, 146, 0)); 
+	color:white; 
+}  
+QTabBar::tab:selected{
+	background:#0099FF;
+	color:white;
+}
+/*按钮样式设计*/
+QPushButton{
+	color:white;
+	background:qlineargradient(x1 : 0, y1 : 0, x2 : 0, y2 : 1, stop : 0 #5a5a5a, stop: 1.0 #464646);
+}
+QPushButton::enabled:hover{
+	background:qlineargradient(x1 : 0, y1 : 0, x2 : 0, y2 : 1, stop : 0 rgb(248, 186, 0), stop : 1.0 rgb(250, 146, 0));
+}
+QPushButton::!enabled{
+	background:rgb(216, 216, 216);
+}
+
+QDoubleSpinBox,QSpinBox{
+	color:white;
+	background:#5B5B5B;
+	border-radius:0px;
+	font: 9pt;
+}
+
+QGroupBox{
+border-width:1px;   
+background:white;
+color:#535252;
+font:18px;
+}
+QGroupBox::title {
+color:#535252;
+}
+QLabel,QCheckBox
+{
+color:#535252;
+font:14px;
+}
+QLineEdit,QComboBox{
+	color:white;
+	background:#5B5B5B;
+	border-radius:0px;
+	font: 9pt;
+}
+QComboBox QAbstractItemView{
+	color:white;
+	background:#5B5B5B;
+}
+/*tabWidget样式设计*/
+QTabWidget::pane{
+	border:1px; 
+	background:rgb(226, 226, 226);
+} 
+QTabWidget::tab-bar{ 
+	background:qlineargradient(x1 : 0, y1 : 0, x2 : 0, y2 : 1, stop : 0 rgb(107, 107, 107), stop: 1.0 rgb(61, 61, 61));
+} 
+QTabBar::tab{
+	background:qlineargradient(x1 : 0, y1 : 0, x2 : 0, y2 : 1, stop : 0 rgb(107, 107, 107), stop: 1.0 rgb(61, 61, 61));
+	border-right:1px solid white;
+	min-width:80px;
+	min-height:23px;
+	color:white;
+}
+QTabBar::tab:hover{
+	background:qlineargradient(x1 : 0, y1 : 0, x2 : 0, y2 : 1, stop : 0 rgb(248, 186, 0), stop : 1.0 rgb(250, 146, 0)); 
+	color:white; 
+}  
+QTabBar::tab:selected{
+	background:#0099FF;
+	color:white;
+}
+/*按钮样式设计*/
+QPushButton{
+	color:white;
+	background:qlineargradient(x1 : 0, y1 : 0, x2 : 0, y2 : 1, stop : 0 #5a5a5a, stop: 1.0 #464646);
+}
+QPushButton::enabled:hover{
+	background:qlineargradient(x1 : 0, y1 : 0, x2 : 0, y2 : 1, stop : 0 rgb(248, 186, 0), stop : 1.0 rgb(250, 146, 0));
+}
+QPushButton::!enabled{
+	background:rgb(216, 216, 216);
+}
+
+QDoubleSpinBox,QSpinBox{
+	color:white;
+	background:#5B5B5B;
+	border-radius:0px;
+	font: 9pt;
+}
+
+QGroupBox{
+border-width:1px;   
+background:white;
+color:#535252;
+font:18px;
+}
+QGroupBox::title {
+color:#535252;
+}
+QLabel,QCheckBox
+{
+color:#535252;
+font:14px;
+}
+QLineEdit,QComboBox{
+	color:white;
+	background:#5B5B5B;
+	border-radius:0px;
+	font: 9pt;
+}
+QComboBox QAbstractItemView{
+	color:white;
+	background:#5B5B5B;
+}
+/*tabWidget样式设计*/
+QTabWidget::pane{
+	border:1px; 
+	background:rgb(226, 226, 226);
+} 
+QTabWidget::tab-bar{ 
+	background:qlineargradient(x1 : 0, y1 : 0, x2 : 0, y2 : 1, stop : 0 rgb(107, 107, 107), stop: 1.0 rgb(61, 61, 61));
+} 
+QTabBar::tab{
+	background:qlineargradient(x1 : 0, y1 : 0, x2 : 0, y2 : 1, stop : 0 rgb(107, 107, 107), stop: 1.0 rgb(61, 61, 61));
+	border-right:1px solid white;
+	min-width:80px;
+	min-height:23px;
+	color:white;
+}
+QTabBar::tab:hover{
+	background:qlineargradient(x1 : 0, y1 : 0, x2 : 0, y2 : 1, stop : 0 rgb(248, 186, 0), stop : 1.0 rgb(250, 146, 0)); 
+	color:white; 
+}  
+QTabBar::tab:selected{
+	background:#0099FF;
+	color:white;
+}
+/*按钮样式设计*/
+QPushButton{
+	color:white;
+	background:qlineargradient(x1 : 0, y1 : 0, x2 : 0, y2 : 1, stop : 0 #5a5a5a, stop: 1.0 #464646);
+}
+QPushButton::enabled:hover{
+	background:qlineargradient(x1 : 0, y1 : 0, x2 : 0, y2 : 1, stop : 0 rgb(248, 186, 0), stop : 1.0 rgb(250, 146, 0));
+}
+QPushButton::!enabled{
+	background:rgb(216, 216, 216);
+}
+
+QDoubleSpinBox,QSpinBox{
+	color:white;
+	background:#5B5B5B;
+	border-radius:0px;
+	font: 9pt;
+}
+
+QGroupBox{
+border-width:1px;   
+background:white;
+color:#535252;
+font:18px;
+}
+QGroupBox::title {
+color:#535252;
+}
+QLabel,QCheckBox
+{
+color:#535252;
+font:14px;
+}
+QLineEdit,QComboBox{
+	color:white;
+	background:#5B5B5B;
+	border-radius:0px;
+	font: 9pt;
+}
+QComboBox QAbstractItemView{
+	color:white;
+	background:#5B5B5B;
+}
+
+QRadioButton{
+    spacing: 2px;
+    color: blue;
+}
+QRadioButton::indicator {
+    width: 45px;
+    height: 30px;
+}
+</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>35</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>data目录路径</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="le_alarm">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>35</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="SelectDataCatalog">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>35</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>选择路径</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="minimumSize">
+        <size>
+         <width>84</width>
+         <height>35</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>流水路径</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="le_No">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>35</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="SelectNoCatalog">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>35</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>选择路径</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QPushButton" name="ListPath">
+     <property name="minimumSize">
+      <size>
+       <width>120</width>
+       <height>35</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>120</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>数据备份开始</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="SelectFile">
+     <property name="minimumSize">
+      <size>
+       <width>120</width>
+       <height>35</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>120</width>
+       <height>35</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>使能按钮</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="CableNo">
+       <property name="minimumSize">
+        <size>
+         <width>120</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>流水数据提取</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="AllAlarm">
+       <property name="minimumSize">
+        <size>
+         <width>120</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>所有数据提取</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>250</height>
+      </size>
+     </property>
+     <property name="title">
+      <string>原图提取</string>
+     </property>
+     <layout class="QFormLayout" name="formLayout">
+      <item row="0" column="0">
+       <widget class="QPushButton" name="GetWaterOrg">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>提取水珠原图</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="org_water">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>30</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QPushButton" name="GetRealOrg">
+        <property name="text">
+         <string>提取真实缺陷原图</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="lineEdit">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>30</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QPushButton" name="GetForeignOrg">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>提取异物缺陷原图</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="lineEdit_2">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>30</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QPushButton" name="GetInsectOrg">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>提取昆虫原图</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLineEdit" name="lineEdit_3">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>30</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QPushButton" name="GetBlackPotOrg">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>提取黑点原图</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QLineEdit" name="lineEdit_4">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>30</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QPushButton" name="GetAllOrg">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>全部提取</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QLineEdit" name="lineEdit_5">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>30</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTextBrowser" name="textBrowser"/>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="FindOrgImage.qrc"/>
+ </resources>
+ <connections/>
+</ui>
