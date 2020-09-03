@@ -1,0 +1,6 @@
+﻿  main.cpp
+g:\pku\exponentiation\exponentation\exponen2\main.cpp(9): warning C4101: “m”: 未引用的局部变量
+g:\pku\exponentiation\exponentation\exponen2\main.cpp(9): warning C4101: “k”: 未引用的局部变量
+g:\pku\exponentiation\exponentation\exponen2\main.cpp(9): warning C4101: “t”: 未引用的局部变量
+  Exponen2.vcxproj -> G:\PKU\Exponentiation\Exponentation\Debug\Exponen2.exe
+  Exponen2.vcxproj -> G:\PKU\Exponentiation\Exponentation\Debug\Exponen2.pdb (Partial PDB)

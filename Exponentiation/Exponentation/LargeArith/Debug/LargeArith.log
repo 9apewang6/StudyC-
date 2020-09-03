@@ -1,0 +1,9 @@
+﻿  LargeArith.cpp
+g:\pku\exponentiation\exponentation\largearith\largearith.cpp(30): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+g:\pku\exponentiation\exponentation\largearith\largearith.cpp(78): warning C4018: “<”: 有符号/无符号不匹配
+g:\pku\exponentiation\exponentation\largearith\largearith.cpp(83): warning C4018: “<”: 有符号/无符号不匹配
+g:\pku\exponentiation\exponentation\largearith\largearith.cpp(87): warning C4018: “<=”: 有符号/无符号不匹配
+g:\pku\exponentiation\exponentation\largearith\largearith.cpp(192): warning C4018: “<”: 有符号/无符号不匹配
+g:\pku\exponentiation\exponentation\largearith\largearith.cpp(196): warning C4018: “<”: 有符号/无符号不匹配
+  LargeArith.vcxproj -> G:\PKU\Exponentiation\Exponentation\Debug\LargeArith.exe
+  LargeArith.vcxproj -> G:\PKU\Exponentiation\Exponentation\Debug\LargeArith.pdb (Partial PDB)

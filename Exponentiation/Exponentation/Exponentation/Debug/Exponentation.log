@@ -1,0 +1,8 @@
+﻿  main.cpp
+g:\pku\exponentiation\exponentation\exponentation\main.cpp(12): warning C4018: “<”: 有符号/无符号不匹配
+g:\pku\exponentiation\exponentation\exponentation\main.cpp(14): warning C4018: “<”: 有符号/无符号不匹配
+g:\pku\exponentiation\exponentation\exponentation\main.cpp(19): warning C4018: “<”: 有符号/无符号不匹配
+g:\pku\exponentiation\exponentation\exponentation\main.cpp(45): warning C4172: 返回局部变量或临时变量的地址: C1
+g:\pku\exponentiation\exponentation\exponentation\main.cpp(63): warning C4172: 返回局部变量或临时变量的地址: C1
+  Exponentation.vcxproj -> G:\PKU\Exponentiation\Exponentation\Debug\Exponentation.exe
+  Exponentation.vcxproj -> G:\PKU\Exponentiation\Exponentation\Debug\Exponentation.pdb (Partial PDB)
