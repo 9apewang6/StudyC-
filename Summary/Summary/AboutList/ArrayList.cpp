@@ -1,5 +1,6 @@
 #include <iostream>
 #include <memory>
+#include <algorithm>
 #include "ArrayList.h"
 
 ListArray::ListArray():size_(0)
@@ -74,6 +75,7 @@ int ListArray::deleteElem(int index) noexcept
     }
     data_[i] = 0;
     --size_;
+    return val;
 }
 
 void ListArray::modifyElem(int index, int e)
@@ -96,6 +98,7 @@ int ListArray::search(int elem)
         }
         continue;
     }
+    throw std::logic_error("do not find the value");
 }
 
 bool ListArray::isEmpty() const
@@ -109,25 +112,48 @@ int ListArray::getLength() const
 }
 //ÉýÐò
 //
-
+void ListArray::bubblesort(int arr[], int len,bool Asending )
+{
+    int i, j;
+    for (i = 0; i < len; i++)
+    {
+        for (j = 0; j < len - i-1; j++)
+        {   
+            if (Asending)
+            {
+                if (arr[j] > arr[j + 1])
+                {
+                    std::swap(arr[j], arr[j + 1]);
+                }
+            }
+            else
+            {
+                if (arr[j] < arr[j + 1])
+                {
+                    std::swap(arr[j], arr[j + 1]);
+                }
+            }
+        }
+    }
+}
 void ListArray::Aescending()
 {
-
+    bubblesort(data_, size_, false);
 }
 
 void ListArray::Descending()
 {
+    bubblesort(data_, size_, true);
+}
 
-}
-void swap(int *p, int *q)
-{
-    if (p == q)return;
-    *p = *p^*q;
-    *q = *p^*q;
-    *p = *p^*q;
-}
 void ListArray::reverse()
 {
+    //·´×ª
+    int i;
+    for (i = 0; i <size_/2; i++)
+    {
+        std::swap(data_[i], data_[size_ - i-1]);
+    }
 
 }
 

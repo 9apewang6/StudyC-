@@ -14,29 +14,31 @@ void InsertSort(vector<T> &Pending, bool Descending = false)
     int i, j;
     int k = 0;
     int len = Pending.size();
+    T temp;
     for (i = 0; i < len; i++)
     {
         k = i-1;
         if (Descending)
         {
-           
-            while (k>=0&&Pending[k] < Pending[i])
+           // 降序,大的在前， 
+            temp = Pending[i];
+            while (k>=0&&Pending[k] <temp)
             {
-
+                Pending[k + 1] = Pending[k];
+                k--;
             }
+            Pending[k + 1] = temp;
         }
         else
         {
-
+            temp = Pending[i];
+            while (k >= 0 && Pending[k] > temp)
+            {
+                Pending[k + 1] = Pending[k];
+                k--;
+            }
+            Pending[k + 1] = temp;
         }
-//         for (j = 0; j < i; j++)
-//         {
-//             while()
-//         }
     }
-
-
 }
-
-
 #endif //_INSERTSORT_H_

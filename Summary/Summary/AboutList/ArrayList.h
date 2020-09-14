@@ -53,11 +53,10 @@ public:
     void display()const;
 private:
     void initList(const ListArray& la);
+    void bubblesort(int arr[],int len, bool Asending = false);
 private:
     int data_[DATASIZE];
     int size_;
-
-
 };
 
 
