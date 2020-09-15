@@ -6,9 +6,18 @@ struct Element
     {
         val_ = 0;
     }
+    Element(int val) :val_(val) {};
     bool operator==(const Element &e)
     {
         return val_ == e.val_;
+    }
+    bool operator>(const Element &e)
+    {
+        return val_ > e.val_;
+    }
+    bool operator<(const Element& e)
+    {
+        return val_ < e.val_;
     }
 };
 struct ListNode
