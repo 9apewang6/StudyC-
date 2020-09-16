@@ -167,5 +167,12 @@ string listnodetostring(ListNode* head)
         head = head->next_;
     }
     return "[" + res.substr(0, res.size() - 1) + "]";
+
 }
+
+string booltostring(bool b)
+{
+    return b ? "True" : "False";
+}
+
 #endif //_PUBLICDEF_H_

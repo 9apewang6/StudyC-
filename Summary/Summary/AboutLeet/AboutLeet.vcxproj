@@ -110,12 +110,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="0101.h" />
+    <ClInclude Include="0106.h" />
+    <ClInclude Include="155.h" />
+    <ClInclude Include="1716.h" />
     <ClInclude Include="buyStock2.h" />
     <ClInclude Include="findmink.h" />
     <ClInclude Include="Judgelist.h" />
     <ClInclude Include="MaxPalindrome.h" />
     <ClInclude Include="middlenode.h" />
     <ClInclude Include="mintreedepth.h" />
+    <ClInclude Include="of04.h" />
+    <ClInclude Include="of05.h" />
+    <ClInclude Include="of22.h" />
+    <ClInclude Include="pro1013.h" />
+    <ClInclude Include="pro112.h" />
+    <ClInclude Include="pro160.h" />
+    <ClInclude Include="pro167.h" />
+    <ClInclude Include="pro226.h" />
     <ClInclude Include="publicdef.h" />
   </ItemGroup>
   <ItemGroup>
