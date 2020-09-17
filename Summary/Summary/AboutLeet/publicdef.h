@@ -50,6 +50,7 @@ std::string vectorTostring(vector<T> &vec)
     return trans;
 }
 
+
 // string to vector
 vector<int> stringtovector(std::string& str)
 {
@@ -84,7 +85,23 @@ vector<int> stringTovector(std::string& str)
     return output;
 }
 
+vector<vector<int>> stringtovectorvector(std::string& str)
+{
+    vector<vector<int>> ans;
+    str = str.substr(1, str.size() - 2);
+    stringstream ss;
+    ss.str(str);
 
+    string item;
+    char delim = ']';
+    vector<int> elem;
+    while (getline(ss, item, delim))
+    {
+        elem = stringtovector(item);
+        ans.push_back(elem);
+   }
+    return ans;
+}
 
 ListNode* stringTolistnode(std::string &str)
 {

@@ -14,6 +14,8 @@
 #include "pro226.h"
 #include "1716.h"
 #include "pro1013.h"
+#include "pro685.h"
+#include "off10_1.h"
 void testbuystock2()
 {
     Solution122 _s122;
@@ -165,8 +167,34 @@ void testpro1013()
     Solutionpro1013 p1013;
     p1013.test();
 }
+void testvecvec()
+{
+    string inputstr;
+    vector<vector<int>> ans;
+    char marks;
+    while (getline(cin, inputstr))
+    {
+        ans = stringtovectorvector(inputstr);
+        cout << " do you want to continue .. y/n"<<endl;
+        cin.get(marks);
+        if (marks != 'y')break;
+        cin.get();
+    }
+}
+void test685()
+{
+    Solutionp685 p685;
+    p685.test();
+}
+void testoff10_1()
+{
+    string ans = "123412341234";
+    ans = ans.substr(0, ans.size()-1);
+    Solutionoff10_1 off10_1;
+    cout <<off10_1.fib(5)<<endl;
+}
 int main()
 {
-    testpro1013();
+    testoff10_1();
     system("pause");
 }

@@ -72,6 +72,45 @@
     <ClInclude Include="pro1013.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="pro685.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="pro234.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="leftrotatestring.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="p543.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="pro344.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="pro202.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="pro1160.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="of29.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="of24.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="pro350.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="off10_1.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="pro1431.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="pro557.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
