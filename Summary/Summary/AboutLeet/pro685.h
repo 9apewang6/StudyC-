@@ -310,7 +310,7 @@ public:
              while (getline(cin, inputstr))
              {
                  inputvec = stringtovectorvector(inputstr);
-                 ans = function(inputvec);
+                 ans = findRedundantDirectedConnection(inputvec);
                  output = vectorTostring(ans);
                  cout << " the answer is " << output<<endl;
                  cout << " do you want to continue .. y/n" << endl;

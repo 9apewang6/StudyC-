@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{AA4CD721-C602-49D3-ACE6-EC2B8769C23C}</ProjectGuid>
-    <RootNamespace>AboutLeet</RootNamespace>
+    <ProjectGuid>{643597F4-C0C4-48D9-B3BE-F5A2261F70EC}</ProjectGuid>
+    <RootNamespace>AboutThread</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -110,58 +110,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="0101.h" />
-    <ClInclude Include="0106.h" />
-    <ClInclude Include="155.h" />
-    <ClInclude Include="1716.h" />
-    <ClInclude Include="buyStock2.h" />
-    <ClInclude Include="findmink.h" />
-    <ClInclude Include="Judgelist.h" />
-    <ClInclude Include="leftrotatestring.h" />
-    <ClInclude Include="MaxPalindrome.h" />
-    <ClInclude Include="middlenode.h" />
-    <ClInclude Include="mintreedepth.h" />
-    <ClInclude Include="of04.h" />
-    <ClInclude Include="of05.h" />
-    <ClInclude Include="of10_2.h" />
-    <ClInclude Include="of17.h" />
-    <ClInclude Include="of21.h" />
-    <ClInclude Include="of22.h" />
-    <ClInclude Include="of24.h" />
-    <ClInclude Include="of27.h" />
-    <ClInclude Include="of29.h" />
-    <ClInclude Include="of42.h" />
-    <ClInclude Include="of59_1.h" />
-    <ClInclude Include="off10_1.h" />
-    <ClInclude Include="off53.h" />
-    <ClInclude Include="p543.h" />
-    <ClInclude Include="pro1013.h" />
-    <ClInclude Include="pro1071.h" />
-    <ClInclude Include="pro112.h" />
-    <ClInclude Include="pro1160.h" />
-    <ClInclude Include="pro1431.h" />
-    <ClInclude Include="pro160.h" />
-    <ClInclude Include="pro167.h" />
-    <ClInclude Include="pro189.h" />
-    <ClInclude Include="pro202.h" />
-    <ClInclude Include="pro217.h" />
-    <ClInclude Include="pro226.h" />
-    <ClInclude Include="pro234.h" />
-    <ClInclude Include="pro242.h" />
-    <ClInclude Include="pro257.h" />
-    <ClInclude Include="pro344.h" />
-    <ClInclude Include="pro350.h" />
-    <ClInclude Include="pro461.h" />
-    <ClInclude Include="pro538.h" />
-    <ClInclude Include="pro557.h" />
-    <ClInclude Include="pro680.h" />
-    <ClInclude Include="pro685.h" />
-    <ClInclude Include="pro836.h" />
-    <ClInclude Include="pro892.h" />
-    <ClInclude Include="pro914.h" />
+    <ClInclude Include="AboutConditionalvariable.h" />
+    <ClInclude Include="aboutlck.h" />
     <ClInclude Include="publicdef.h" />
+    <ClInclude Include="t1.h" />
+    <ClInclude Include="t2.h" />
+    <ClInclude Include="t3.h" />
+    <ClInclude Include="t4.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AboutConditionalvariable.cpp" />
+    <ClCompile Include="aboutlck.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

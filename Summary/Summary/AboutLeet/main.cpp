@@ -16,6 +16,8 @@
 #include "pro1013.h"
 #include "pro685.h"
 #include "off10_1.h"
+#include "pro257.h"
+#include "pro538.h"
 void testbuystock2()
 {
     Solution122 _s122;
@@ -96,6 +98,18 @@ void testvector()
     {
         cout << iter << endl;
     }
+
+
+
+    vector<vector<int>> ans;
+    vector<int> perm;
+    perm.push_back(1);
+    ans.emplace_back(perm);
+    perm.push_back(2);
+    ans.emplace_back(perm);
+    perm.push_back(3);
+    ans.emplace_back(perm);
+    
 }
 void testqueue()
 {
@@ -193,8 +207,18 @@ void testoff10_1()
     Solutionoff10_1 off10_1;
     cout <<off10_1.fib(5)<<endl;
 }
+void test257()
+{
+    Solutionp257  s257;
+    s257.test();
+}
+void test538()
+{
+    Solutionpro538 p538;
+    p538.test();
+}
 int main()
 {
-    testoff10_1();
+    test538();
     system("pause");
 }

@@ -9,6 +9,9 @@
 #include <fstream>
 #include <sstream>
 #include <algorithm>
+#include <math.h>
+#include <numeric>
+#include <functional>
 using namespace std;
 
 struct ListNode
