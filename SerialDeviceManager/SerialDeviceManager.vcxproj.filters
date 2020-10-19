@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="public">
+      <UniqueIdentifier>{b12d84ab-925b-47d5-9667-1670d050898f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SerialPortComm">
+      <UniqueIdentifier>{85e73b75-1071-4353-b1f3-d885164737c1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SerialDeviceManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DialIndicator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SerialWin.cpp">
+      <Filter>SerialPortComm</Filter>
+    </ClCompile>
+    <ClCompile Include="SerialQt.cpp">
+      <Filter>SerialPortComm</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseThread.cpp">
+      <Filter>SerialPortComm</Filter>
+    </ClCompile>
+    <ClCompile Include="SerialThread.cpp">
+      <Filter>SerialPortComm</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SerialDeviceManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SerialCommCfg.h">
+      <Filter>public</Filter>
+    </ClInclude>
+    <ClInclude Include="ISerialDevice.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DialIndicator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SerialWin.h">
+      <Filter>SerialPortComm</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseThread.h">
+      <Filter>SerialPortComm</Filter>
+    </ClInclude>
+    <ClInclude Include="SerialThread.h">
+      <Filter>SerialPortComm</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="serialdevicemanager_global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="SerialQt.h">
+      <Filter>SerialPortComm</Filter>
+    </QtMoc>
+  </ItemGroup>
+</Project>
