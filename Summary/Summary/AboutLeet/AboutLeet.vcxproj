@@ -110,6 +110,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="01.h" />
     <ClInclude Include="0101.h" />
     <ClInclude Include="0106.h" />
     <ClInclude Include="155.h" />
@@ -133,7 +134,9 @@
     <ClInclude Include="of42.h" />
     <ClInclude Include="of59_1.h" />
     <ClInclude Include="off10_1.h" />
-    <ClInclude Include="off53.h" />
+
+    <ClInclude Include="p219.h" />
+
     <ClInclude Include="p543.h" />
     <ClInclude Include="pro1013.h" />
     <ClInclude Include="pro1071.h" />
@@ -142,19 +145,23 @@
     <ClInclude Include="pro1431.h" />
     <ClInclude Include="pro160.h" />
     <ClInclude Include="pro167.h" />
-    <ClInclude Include="pro189.h" />
+
+    <ClInclude Include="pro171.h" />
     <ClInclude Include="pro202.h" />
-    <ClInclude Include="pro217.h" />
+    <ClInclude Include="pro204.h" />
+
     <ClInclude Include="pro226.h" />
     <ClInclude Include="pro234.h" />
     <ClInclude Include="pro242.h" />
     <ClInclude Include="pro257.h" />
     <ClInclude Include="pro344.h" />
     <ClInclude Include="pro350.h" />
-    <ClInclude Include="pro461.h" />
-    <ClInclude Include="pro538.h" />
+
+    <ClInclude Include="pro404.h" />
+    <ClInclude Include="pro46.h" />
     <ClInclude Include="pro557.h" />
-    <ClInclude Include="pro680.h" />
+    <ClInclude Include="pro684.h" />
+
     <ClInclude Include="pro685.h" />
     <ClInclude Include="pro836.h" />
     <ClInclude Include="pro892.h" />

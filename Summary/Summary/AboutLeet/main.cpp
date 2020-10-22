@@ -16,8 +16,12 @@
 #include "pro1013.h"
 #include "pro685.h"
 #include "off10_1.h"
+
 #include "pro257.h"
 #include "pro538.h"
+
+#include "pro404.h"
+
 void testbuystock2()
 {
     Solution122 _s122;
@@ -217,8 +221,21 @@ void test538()
     Solutionpro538 p538;
     p538.test();
 }
+void testpro404()
+{
+    Solutionpro404 pro404;
+    pro404.test();
+}
+#include "01.h"
+void test01()
+{
+    Solution s;
+    s.test();
+}
 int main()
 {
-    test538();
+
+    test01();
+
     system("pause");
 }
