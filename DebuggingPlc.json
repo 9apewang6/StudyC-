@@ -1,0 +1,59 @@
+{
+    "MOTION": [
+        {
+            "label": "x轴",
+            "Left":"M100",
+			"Right":"M101",
+			"Speed":"D100",
+			"Start":"M102",
+			"Position":"D110",
+			"GoBack":"M103"
+        },
+		{
+			"label": "y轴",
+            "Left":"M110",
+			"Right":"M111",
+			"Speed":"D200",
+			"Start":"M112",
+			"Position":"D210",
+			"GoBack":"M113"
+		},
+		{
+			"label": "z轴",
+            "Left":"M120",
+			"Right":"M121",
+			"Speed":"D300",
+			"Start":"M122",
+			"Position":"D310",
+			"GoBack":"M123"
+		
+		},
+		{
+			"label": "R轴",
+            "Left":"M130",
+			"Right":"M131",
+			"Speed":"D400",
+			"Start":"M132",
+			"Position":"D410",
+			"GoBack":"M133"
+		}
+        
+    ],
+	"EnsurePoint":[
+		{
+			"addr":"M140"
+		},
+		{
+			"addr":"M141"
+		},
+		{
+			"addr":"M142"
+		},
+		{
+			"addr":"M143"
+		}	
+	],
+	"ProductId":"D500",
+	"MotionJson":"G:/plcManage.json",
+	"MotionLabel":"p1"
+}

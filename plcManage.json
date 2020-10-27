@@ -1,0 +1,50 @@
+{
+    "PLC": [
+        {
+            "Type": "MitSub",
+            "WatchedRegister": [
+            ],
+            "ip": "192.168.250.30",
+            "label": "p1",
+            "logicalstationNumber": 1,
+            "port": 4999
+        },
+        {
+            "Type": "MitSub",
+            "WatchedRegister": [
+            ],
+            "ip": "",
+            "label": "p4",
+            "logicalstationNumber": 3,
+            "port": 1
+        },
+        {
+            "Type": "MitSub",
+            "WatchedRegister": [
+            ],
+            "ip": "",
+            "label": "p5",
+            "logicalstationNumber": 3,
+            "port": 1
+        },
+        {
+            "Type": "MitSub",
+            "WatchedRegister": [
+            ],
+            "ip": "",
+            "label": "p2",
+            "logicalstationNumber": 3,
+            "port": 1
+        },
+        {
+            "Type": "MitSub",
+            "WatchedRegister": [
+            ],
+            "ip": "",
+            "label": "p3",
+            "logicalstationNumber": 3,
+            "port": 1
+        }
+    ],
+	"PLCServer":"G:/plcManage.json"
+}
