@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/NewModelGuide">
+        <file>Resources/打开hover.png</file>
+        <file>Resources/打开normal.png</file>
+        <file>Resources/打开selected.png</file>
+    </qresource>
+</RCC>

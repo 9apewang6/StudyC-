@@ -1,0 +1,4 @@
+ NewModelGuide::NewModelGuide
+delete SelectModel
+delete Partition
+NewModelGuide::~NewModelGuide
