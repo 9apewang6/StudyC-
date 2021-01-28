@@ -1,2 +1,5 @@
-﻿  TestMap.vcxproj -> G:\Study\StudyC-\TestMap\Debug\TestMap.exe
+﻿  stdafx.cpp
+  TestMap.cpp
+g:\study\studyc-\testmap\testmap\testmap.cpp(97): warning C4018: “<”: 有符号/无符号不匹配
+  TestMap.vcxproj -> G:\Study\StudyC-\TestMap\Debug\TestMap.exe
   TestMap.vcxproj -> G:\Study\StudyC-\TestMap\Debug\TestMap.pdb (Full PDB)

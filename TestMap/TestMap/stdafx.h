@@ -12,8 +12,19 @@
 #include <unordered_map>
 #include <map>
 #include <iostream>
+#include <vector>
+#include <algorithm>
+
+#include<iostream>
+#include<string>
+#include<vector>
+#include <windows.h>
+
+
+
 using namespace std;
 using std::map;
 using std::unordered_map;
 using std::multimap;
+using std::vector;
 // TODO:  在此处引用程序需要的其他头文件
